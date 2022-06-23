@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-
+import '../App.css'
 
 const Movie = (props) =>{
     
@@ -7,8 +7,9 @@ const Movie = (props) =>{
     return(
 
        
-    <div onClick={()=>setShow(!show)}>
-        <img src={"https://image.tmdb.org/t/p/original/"+props.poster}></img>
+    <div onClick={()=>setShow(!show)} className="MovieContainer">
+        <img alt ="movie poster"src={"https://image.tmdb.org/t/p/original/"+props.poster}></img>
+       
         {show && (
         <ul>
         <li>{props.title}</li> 
