@@ -1,20 +1,71 @@
 .App{
-  width: fit-content;
-height: fit-content;
+width: 100%;
+height: 100%;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: black;
+position: relative;
+
 }
 
 
 .ListContainer{
-  width: 3000px;
+  justify-content: center;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px;
 }
+
+
+.MovieContainer{
+  color: white;
+  width: 300px;
+  margin: 5px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+.SearchTab{
+  width: 50%;
+  margin: 10%;
+}
+
+
+.MovieInfo{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  color: black;
+  width: 100%;
+}
+
 img{
   max-width: 100%;
   max-height: 100%;
 }
 
-.MovieContainer{
-  width: 50px;
-  width: 50px;
+li{
+  list-style: none;
+  margin-top: 10%;
 }
+
+
+input[type =radio]{
+  display: none;
+  }
+
+
+  h1{
+    color: white;
+    font-size: 50px;
+  }
+
+  ::placeholder{
+    color: gainsboro;
+  }
+  
