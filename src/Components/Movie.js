@@ -7,16 +7,16 @@ const Movie = (props) =>{
     return(
 
        
-    <div onClick={()=>setShow(!show)} className="MovieContainer">
+    <div  onClick={()=>setShow(!show)} className="MovieContainer">
         <img alt ="movie poster"src={"https://image.tmdb.org/t/p/original/"+props.poster}></img>
        
         {show && (
-        <ul>
+        <div className="MovieInfo">
         <li>{props.title}</li> 
         <li>{props.overview}</li>
         <li>{props.release}</li>
         <li>{props.popularity}</li>
-        </ul>
+        </div>
         )}
     
     </div>

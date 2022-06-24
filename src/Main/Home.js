@@ -19,7 +19,7 @@ const Home = () =>{
     
     return(
     <div>      
-        <input value = {search}   onChange={(e) => HandleChange(e)}/>
+        <input className="SearchTab" placeholder="Search a movie" value = {search}   onChange={(e) => HandleChange(e)}/>
         {Conditional()}
     </div>
     )
