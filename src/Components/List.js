@@ -19,9 +19,6 @@ const List = (props) => {
         setList(res.data.results)
         }
 
-
-
-
     return (
         <div className="ListContainer">
             {list.filter((movie) =>{
