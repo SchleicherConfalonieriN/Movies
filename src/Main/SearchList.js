@@ -13,15 +13,15 @@ const SearchList = (props) =>{
     const Url= Api.search.searchS + props.Query + Api.search.searchE
         return ( 
             <div>
-                {[...Array(5)].map((star, counter) => {
+               <div > {[...Array(5)].map((star, counter) => {
                     const ratingValue = counter + 1;
                     return(
                     <label>
-                        <input type= "radio" name="rating" value = {ratingValue}  onClick={(e) => setRating(e.target.value)}></input>    
-                        <AiFillStar  size={50}/>
+                        <input type="radio" name="rating" value = {ratingValue}  onClick={(e) => setRating(e.target.value)}></input>    
+                        <AiFillStar  size={50}  color={ratingValue <= rating ? "yellow" : "gray"}/>
                     </label>
                     );})}
-
+            </div>
             <List Api={Url} Rating={rating}/>
             </div>)
         }
